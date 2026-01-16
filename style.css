@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #222;
+}
+ 
+header {
+    background-color: #1f2933;
+    color: #fff;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+ 
+.subtitle {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+ 
+nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+ 
+nav a {
+    text-decoration: none;
+    color: #1f2933;
+    font-weight: 500;
+}
+ 
+nav a:hover {
+    text-decoration: underline;
+}
+ 
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+ 
+section {
+    margin-bottom: 3rem;
+}
+ 
+h2 {
+    margin-bottom: 1rem;
+    color: #1f2933;
+}
+ 
+ul {
+    padding-left: 1.2rem;
+}
+ 
+li {
+    margin-bottom: 0.5rem;
+}
+ 
+article {
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+ 
+.button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+ 
+.button:hover {
+    background-color: #1d4ed8;
+}
+ 
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+ 
+ main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; /* NEU: Grid einschalten */ display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; }
+ #projects { grid-column: 1 / -1; }
+ #contact { grid-column: 1 / -1; }
+ #projects { display: grid; }
+ #projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+ #projects h2 { grid-column: 1 / -1; }
+#projects article { margin: 0; }
+@media (max-width: 700px) { main { grid-template-columns: 1fr; } #projects { grid-template-columns: 1fr; } }
+#skills ul { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1.2rem; padding-left: 0; /* optional */ list-style-position: inside; /* optional */ }
